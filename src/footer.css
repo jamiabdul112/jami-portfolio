@@ -1,0 +1,105 @@
+.footer-page {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 10%;
+  border-top: 1px solid #00000057;
+  background-color: #fff;
+  font-family: "Handlee", cursive;
+/* Matches the handwriting style */
+}
+
+.img-bar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.img-bar img {
+  height: 25px;
+  width: auto;
+}
+
+.social-medias {
+  display: flex;
+  gap: 30px;
+}
+
+.footer-p {
+  background-color: #0d0d0d;
+  color: #ffffff;
+  padding: 2px 1px;
+  margin: 0;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.footer-p:hover {
+  transform: scale(1.05);
+}
+
+/* Optional: To handle the "znisa" text if you add it next to the logo as seen in the image */
+
+/* Tablet breakpoint (≤768px) */
+@media (max-width: 768px) {
+  .footer-page {
+    
+    
+    padding: 30px 5%;              /* reduce padding */
+    text-align: center;
+    gap: 1.5rem;                   /* spacing between sections */
+  }
+
+  .img-bar {
+    justify-content: center;
+    gap: 8px;
+  }
+
+  .img-bar img {
+    height: 22px;
+  }
+
+  .social-medias {
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .footer-p {
+    font-size: 0.75rem;
+    padding: 3px 1px;
+  }
+}
+
+/* Mobile / Android breakpoint (≤480px) */
+@media (max-width: 480px) {
+  .footer-page {
+  
+    padding: 20px 5%;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  .img-bar {
+    flex-wrap: wrap;               /* allow wrapping if too many icons */
+    justify-content: center;
+    gap: 6px;
+  }
+
+  .img-bar img {
+    height: 20px;
+  }
+
+  .social-medias {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .footer-p {
+    font-size: 0.7rem;
+    padding: 4px 1px;
+    display: inline-block;
+    margin-top: 0.5rem;
+  }
+}

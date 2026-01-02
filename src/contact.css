@@ -1,0 +1,253 @@
+.over-contact{
+    overflow: hidden;
+}
+
+.contact-page {
+  width: 100%;
+  min-height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  background: #fff;
+
+}
+
+.contact-wrapper {
+  display: flex;
+  max-width: 900px;
+  width: 100%;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.contact-left {
+ 
+  padding-right: 40px;
+  position: relative;
+}
+
+.contact-left img {
+  width: 190px;
+  margin-bottom: 20px;
+  
+}
+
+.contact-p {
+  font-size: 16px;
+  color: #000;
+  line-height: 1.5;
+  max-width: 200px;
+}
+
+.contact-p .highlight-p {
+  font-weight: bold;
+}
+
+
+
+form {
+  width: 100%;
+}
+
+.form-box {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.form-box > div {
+  display: flex;
+  align-items: center;
+}
+
+.pink-label, .yellow-label, .blue-label {
+  background-color: #ffb6d9;
+  padding: 3px 4px;
+  
+  font-weight: 600;
+  font-size: 17px;
+  border-radius: 4px;
+  
+  margin-right: 15px;
+  color: #000;
+  border-left: 3px solid black;
+    font-family: "Handlee", cursive;
+}
+
+.yellow-label {
+  background-color: #f9d56e; /* yellow */
+}
+
+.violet-label{
+  background-color: #ffadad;
+}
+
+.blue-label {
+  background-color: #8ec9f4; /* blue */
+}
+
+.input-box {
+  
+  border: none;
+  border-bottom: 1px solid #000;
+  background: transparent;
+  font-family: "Handlee", cursive;
+  width: 270px;
+  font-size: 15px;
+  padding: 4px 8px;
+  outline: none;
+}
+
+.input-box::placeholder {
+  font-style: italic;
+  color: #333;
+}
+
+button[type='submit'] {
+  background-color: #000;
+  color: #fff;
+  padding: 12px 28px;
+  margin-top: 1.2rem;
+  font-weight: 600;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  transform: rotate(-5deg);
+  transition: background-color 0.3s ease;
+font-family: "Handlee", cursive;
+  display: inline-block;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+
+button[type='submit']:hover {
+  background-color: #333;
+}
+
+/* Tablet breakpoint (≤768px) */
+@media (max-width: 768px) {
+  .contact-wrapper {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding: 20px;
+  }
+
+  .contact-left {
+
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+  }
+
+  .contact-left img {
+    width: 150px;
+    margin-bottom: 15px;
+    
+  }
+
+  .contact-p {
+    font-size: 14px;
+    max-width: 70%;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  form {
+    width: 100%;
+    width: 550px;
+  }
+
+  .pink-label, .yellow-label, .blue-label {
+
+  padding: 3px 8px;
+  
+  font-weight: 600;
+  font-size: 17px;
+  border-radius: 4px;
+  width: max-content;
+  margin-right: 15px;
+  color: #000;
+  border-left: 3px solid black;
+    font-family: "Handlee", cursive;
+}
+
+  .input-box {
+    width: 100%;
+    font-size: 13px;
+  }
+
+  button[type='submit'] {
+    font-size: 15px;
+    padding: 10px 24px;
+         transform: rotate(-3deg);/* remove tilt for cleaner mobile look */
+  }
+}
+
+/* Mobile / Android breakpoint (≤480px) */
+@media (max-width: 480px) {
+  .contact-page {
+    min-height: auto;
+    margin: auto;
+    padding: 20px auto;
+
+  }
+
+  .contact-wrapper {
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 15px;
+    margin: auto;
+    margin-bottom: 5rem;
+
+  }
+
+  .contact-left img {
+    width: 160px;
+    margin-left: 3.5rem;
+    margin-bottom: 12px;
+    
+  }
+
+  .contact-p {
+    font-size: 13px;
+    line-height: 1.4;
+  }
+
+  form {
+    width: 100%;
+    width: 280px;
+    margin: auto;
+  }
+
+  .form-box {
+    gap: 15px;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+
+  .pink-label, .yellow-label, .blue-label {
+    font-size: 15px;
+    margin-right: 10px;
+  }
+
+  .input-box {
+    width: 100%;
+    
+    font-size: 12px;
+    padding: 4px 6px;
+  }
+
+  button[type='submit'] {
+    font-size: 14px;
+    padding: 10px 20px;
+    margin-top: 1rem;
+    width: 100%; 
+      transform: rotate(-2deg);/* full-width button for touch ergonomics */
+  }
+}

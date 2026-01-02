@@ -1,0 +1,282 @@
+.project-page {
+  padding: 20px;
+  
+  color: #111;
+  display: flex;
+  justify-content: center;
+  margin-top: 5rem;
+}
+
+.project-box {
+  display: flex;
+  gap: 40px;
+  max-width: 1000px;
+  width: 100%;
+}
+
+.project-left-box {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.project-left-box img {
+  width: 180px;
+  height: auto;
+}
+
+.project-p {
+  font-size: 14px;
+  line-height: 1.4;
+  color: #111;
+  margin-top: 0;
+  max-width: 150px;
+}
+
+.projects-grids {
+  flex: 2;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+}
+
+.grid-1, .grid-2, .grid-3, .grid-4 {
+  border: 3px solid #000;
+  padding: 18px;
+  background: #fff;
+
+  cursor: pointer;
+ 
+  transition: box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 12px;
+  user-select: none;
+  margin-bottom: 1rem;
+  height: 320px;
+  transition: all 0.3s ease;
+ 
+}
+
+.grid-1:hover, .grid-2:hover, .grid-3:hover, .grid-4:hover {
+  transform: translateY(-8px) scale(1.02);   /* lift and slightly enlarge */
+  box-shadow: 0 12px 20px rgba(0,0,0,0.15); /* deeper shadow */
+                       /* accent border color */
+  transition: all 0.3s ease;
+}
+
+.grid-1:hover, .grid-2:hover, .grid-3:hover, .grid-4:hover {
+  box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+}
+
+.image-box {
+  width: 335px;
+  height: 250px;
+  border-radius: 2px;
+  object-fit: cover;
+  object-position: top;
+  display: block;
+  border: 1px solid rgba(0, 0, 0, 0.151);
+}
+
+.grid-bottom-1, 
+.grid-bottom-2, 
+.grid-bottom-3, 
+.grid-bottom-4{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+.grid-bottom-1 p,
+.grid-bottom-2 p,
+.grid-bottom-3 p,
+.grid-bottom-4 p {
+  font-size: 18px;
+  font-weight: 900;
+  color: #111;
+  margin: 0;
+  line-height: 1.3;
+  white-space: normal;
+  font-family: "Handlee", cursive;
+}
+
+.grid-bottom-1 button,
+.grid-bottom-2 button,
+.grid-bottom-3 button,
+.grid-bottom-4 button {
+  padding: 6px 16px;
+ border-top-left-radius: 0;   /* top-left corner */
+  border-top-right-radius: 20px;  /* top-right corner */
+  border-bottom-right-radius: 20px; /* bottom-right corner */
+  border-bottom-left-radius: 20px;
+  border: none;
+  font-weight: 600;
+  font-size: 12px;
+  cursor: pointer;
+  min-width: 90px;
+  text-align: center;
+  user-select: none;
+  transition: background-color 0.3s ease;
+}
+
+/* Specific button colors and text */
+.grid-bottom-1 button {
+  background-color: #ff6fbb; /* pink */
+  color: #fff;
+}
+
+.grid-bottom-1 button:hover {
+  background-color: #e65ba3;
+}
+
+.grid-bottom-2 button {
+  background-color: #4ea1ff; /* blue */
+  color: #fff;
+}
+
+.grid-bottom-2 button:hover {
+  background-color: #3a84e6;
+}
+
+.grid-bottom-3 button {
+  background-color: #ffcb3b; /* yellow */
+  color: #3a3a3a;
+}
+
+.grid-bottom-3 button:hover {
+  background-color: #e6b72f;
+}
+
+.grid-bottom-4 button {
+  background-color: #56ed5d; /* green */
+  color: #111;
+}
+
+.grid-bottom-4 button:hover {
+  background-color: #44ca4a;
+}
+
+.color1{
+  background-color: #873ae6 !important;
+  color: white !important;
+}
+.color2{
+  background-color: #e63a3a !important;
+  color: white !important;
+}
+
+/* Highlight text styles for "Finance Landing page" */
+
+/* Tablet breakpoint (≤768px) */
+@media (max-width: 768px) {
+  .project-page {
+    padding: 15px;
+    margin-top: 2rem;
+  }
+
+  .project-box {
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+  }
+
+  .project-left-box img {
+    width: 140px;
+  }
+
+  .project-p {
+    font-size: 13px;
+    max-width: 200px;
+    text-align: center;
+  }
+
+  .projects-grids {
+    grid-template-columns: 1fr; /* single column grid */
+    width: 100%;
+  }
+
+  .grid-1, .grid-2, .grid-3, .grid-4 {
+    height: 280px;       /* slightly taller */
+    padding-bottom: 2rem;
+    width: 600px; /* extra bottom padding */
+  }
+
+  .image-box {
+    width: 100%;
+    height: auto;
+    height: 200px;
+  }
+
+  .grid-bottom-1 p,
+  .grid-bottom-2 p,
+  .grid-bottom-3 p,
+  .grid-bottom-4 p {
+    font-size: 16px;
+  }
+
+  .grid-bottom-1 button,
+  .grid-bottom-2 button,
+  .grid-bottom-3 button,
+  .grid-bottom-4 button {
+    font-size: 13px;
+    min-width: 80px;
+  }
+}
+
+/* Mobile / Android breakpoint (≤480px) */
+@media (max-width: 480px) {
+  .project-page {
+    padding: 10px;
+    margin-top: 1.5rem;
+  }
+
+  .project-left-box img {
+    width: 160px;
+  }
+
+  .project-p {
+    font-size: 15px;
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .projects-grids {
+    grid-template-columns: 1fr; /* stack all grids vertically */
+    grid-gap: 15px;
+  }
+
+  .grid-1, .grid-2, .grid-3, .grid-4 {
+    height: 200px;  
+    width: auto;  
+        /* taller for mobile */
+     /* generous bottom padding */
+  }
+
+  .image-box {
+    width: 100%;
+    height: auto;
+    max-height: 180px;
+  }
+
+  .grid-bottom-1 p,
+  .grid-bottom-2 p,
+  .grid-bottom-3 p,
+  .grid-bottom-4 p {
+    font-size: 15px;
+  }
+
+  .grid-bottom-1 button,
+  .grid-bottom-2 button,
+  .grid-bottom-3 button,
+  .grid-bottom-4 button {
+    font-size: 12px;
+    padding: 6px 12px;
+    min-width: 70px;
+  }
+}

@@ -1,0 +1,234 @@
+.card-page {
+  padding: 40px;
+
+  background: #fff;
+}
+
+.card-top-what-i-do-img{
+     max-width: 1000px;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+}
+
+.card-top-what-i-do-img img{
+    height: 100px;
+}
+
+
+.card-width {
+  max-width: 1000px;
+  margin: 0 auto;
+  overflow: visible;
+}
+
+.card-wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  perspective: 800px;
+}
+
+.custom-spotlight-card-1,
+.custom-spotlight-card-2,
+.custom-spotlight-card-3 {
+  flex: 1;
+  box-sizing: border-box;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  position: relative;
+  cursor: default;
+  transition: transform 0.3s ease;
+  transform-style: preserve-3d;
+  user-select: none;
+  min-height: 300px;
+  padding-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Background colors */
+.custom-spotlight-card-1 {
+  background-color: #fee08b; /* pastel yellow */
+  border: 2px solid #f5d961;
+  transform: rotate(-4deg);
+}
+
+.custom-spotlight-card-2 {
+  background-color: #8ecae6; /* pastel blue */
+  border: 2px solid #559ecf;
+  transform: rotate(4deg);
+}
+
+.custom-spotlight-card-3 {
+  background-color: #f4a6c0; /* pastel pink */
+  border: 2px solid #e87ca1;
+  transform: rotate(-2deg);
+}
+
+/* Slight tilt on hover for subtle animation */
+.custom-spotlight-card-1:hover {
+  transform: rotate(-2deg) scale(1.05);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+}
+.custom-spotlight-card-2:hover {
+  transform: rotate(6deg) scale(1.05);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+}
+.custom-spotlight-card-3:hover {
+  transform: rotate(0deg) scale(1.05);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+}
+
+/* Top right aligned small label */
+.card-1-top-right-aligned {
+  display: flex;
+  
+
+  justify-content: flex-end;
+  align-items: flex-end;
+ /* default blue background for label */
+  padding: 3px 10px;
+  border-radius: 4px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
+  text-align: right;
+  
+
+}
+
+/* Color variations for labels based on card */
+.custom-spotlight-card-1 .card-1-top-right-aligned p {
+  background: #7eb6ff;
+  color: #003366;
+  padding: 0.3rem;
+  border-radius: 4px;
+  transform: rotate(-5deg);
+  top: 15px;
+  right: 15px;
+  font-family: "Handlee", cursive;
+}
+
+.custom-spotlight-card-2 .card-1-top-right-aligned p {
+  background: #f4c2c2; /* pastel pink */
+  color: #57394d;
+  padding: 0.3rem;
+  border-radius: 4px;
+  transform: rotate(5deg);
+  top: 15px;
+  right: 15px;
+  font-family: "Handlee", cursive;
+}
+
+.custom-spotlight-card-3 .card-1-top-right-aligned p {
+  background: #f8e16c; /* pastel yellow */
+  color: #5a4400;
+  padding: 0.3rem;
+  border-radius: 4px;
+  transform: rotate(5deg);
+  top: 15px;
+  right: 15px;
+  font-family: "Handlee", cursive;
+}
+
+/* Bottom left content */
+.card-1-bottom-left-aligned {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.card-1-bottom-left-aligned img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+/* Heading inside cards */
+.card-1-h3 {
+  font-size: 27px;
+  font-weight: 700;
+  color: #000;
+  line-height: 1.3;
+  margin: 0;
+  width: 200px;
+}
+
+/* Paragraph in card label */
+.card-1-p {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* Additional subtle shadows for layering */
+.custom-spotlight-card-1 {
+  box-shadow: 5px 5px 10px rgba(255, 174, 0, 0.4);
+}
+
+.custom-spotlight-card-2 {
+  box-shadow: 5px 5px 10px rgba(0, 150, 255, 0.3);
+}
+
+.custom-spotlight-card-3 {
+  box-shadow: 5px 5px 10px rgba(255, 100, 180, 0.3);
+}
+
+/* Tablet breakpoint (≤768px) */
+/* Tablet breakpoint (≤768px) */
+@media (max-width: 768px) {
+  .card-wrapper {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .custom-spotlight-card-1,
+  .custom-spotlight-card-2,
+  .custom-spotlight-card-3 {
+    flex: 1 1 calc(45% - 20px); /* narrower width */
+    min-height: 350px;          /* taller height */
+    padding-bottom: 4rem;       /* extra bottom padding */
+   
+  }
+
+   .card-1-h3 {
+    font-size: 22px;
+    width: auto;
+  }
+
+  .card-1-p {
+    font-size: 13px;
+  }
+}
+
+/* Mobile / Android breakpoint (≤480px) */
+@media (max-width: 480px) {
+  .card-wrapper {
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .custom-spotlight-card-1,
+  .custom-spotlight-card-2,
+  .custom-spotlight-card-3 {
+    flex: 1 1 100%;
+    min-height: 300px;          /* even taller for mobile */
+    padding-bottom: 3rem;       /* generous bottom padding */
+    
+  }
+
+   .card-1-h3 {
+    font-size: 20px;
+    line-height: 1.2;
+    width: 150px;
+  }
+
+  .card-1-p {
+    font-size: 12px;
+  }
+}
+

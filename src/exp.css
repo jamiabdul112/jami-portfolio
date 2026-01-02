@@ -1,0 +1,266 @@
+.experience-page {
+  max-width: 1000px;
+  margin: 55px auto;
+  padding: 0 20px;
+
+  color: #000;
+}
+
+.experience-layout {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  border-left: none;
+  border-right: none;
+  padding: 30px 40px;
+  gap: 5rem;
+}
+
+
+
+
+.left-experience {
+  
+  margin-right: 60px;
+ 
+}
+
+.left-experience img {
+  display: block;
+  max-width: 180px;
+  margin-bottom: 25px;
+}
+
+.exp-p {
+  max-width: 180px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+
+
+
+
+.right-experience {
+  
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  
+}
+
+.exp-card-1,
+.exp-card-2,
+.exp-card-3 {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  border: 2px solid white;
+  transition: all 0.3s ease; /* smooth hover */
+}
+
+/* Lift + shadow */
+.exp-card-1:hover,
+.exp-card-2:hover,
+.exp-card-3:hover {
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+/* Optional: accent border on hover */
+.exp-card-1:hover { border: 2px solid #f9d66f; } /* pink accent */
+.exp-card-2:hover { border: 2px solid #8ed1fb; } /* blue accent */
+.exp-card-3:hover { border: 2px solid #f9bbf7; } 
+
+.exp-card-1 button,
+.exp-card-2 button,
+.exp-card-3 button {
+  width: 60px;
+  height: 60px;
+  font-family: "Handlee", cursive;
+  font-size: 22px;
+  font-weight: 700;
+  border-radius: 8px;
+  border: none;
+  cursor: default;
+  margin-right: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+}
+
+.exp-card-1 button {
+  background-color: #f9d66f; /* yellow */
+  color: black;
+  box-shadow: 0 2px 5px rgba(249, 214, 111, 0.5);
+}
+
+.exp-card-2 button {
+  background-color: #8ed1fb; /* light blue */
+  color: black;
+  box-shadow: 0 2px 5px rgba(142, 209, 251, 0.5);
+}
+
+.exp-card-3 button {
+  background-color: #f9bbf7; /* pink */
+  color: black;
+  box-shadow: 0 2px 5px rgba(249, 187, 247, 0.5);
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.exp-lite-big-p {
+  font-size: 17px;
+  font-weight: 600;
+  margin: 0 0 6px 0;
+}
+
+.exp-lite-big-p strong {
+  font-weight: 700;
+}
+
+.exp-lite-small-p {
+  font-size: 14px;
+  margin: 0 0 4px 0;
+  color: #222;
+}
+
+.exp-fade-p {
+  font-size: 13px;
+  color: #888;
+  margin: 0;
+}
+
+/* Tablet breakpoint (≤768px) */
+@media (max-width: 768px) {
+  .experience-layout {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    gap: 2rem;
+  }
+
+  .left-experience {
+    margin-right: 0;
+    text-align: center;
+  }
+  .left-experience{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .left-experience img {
+    max-width: 140px;
+    margin-bottom: 20px;
+  }
+
+  .exp-p {
+    max-width: 100%;
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .right-experience {
+    width: 100%;
+    gap: 15px;
+  }
+
+  .exp-card-1,
+  .exp-card-2,
+  .exp-card-3 {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+    min-height: 13px;
+    cursor: pointer;
+  }
+
+  .exp-card-1 button,
+  .exp-card-2 button,
+  .exp-card-3 button {
+    width: 50px;
+    height: 50px;
+    font-size: 18px;
+    margin-bottom: 15px;
+    margin-right: 0;
+  }
+
+  .exp-lite-big-p {
+    font-size: 16px;
+  }
+
+  .exp-lite-small-p {
+    font-size: 13px;
+  }
+
+  .exp-fade-p {
+    font-size: 12px;
+  }
+}
+
+/* Mobile / Android breakpoint (≤480px) */
+@media (max-width: 480px) {
+  .experience-page {
+    margin: 30px auto;
+    padding: 0 10px;
+  }
+
+  .experience-layout {
+    padding: 15px;
+    gap: 1.5rem;
+  }
+
+  .left-experience img {
+    max-width: 160px;
+    margin-bottom: 15px;
+  }
+
+  .left-experience{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .exp-p {
+    font-size: 14px;
+    line-height: 1.4;
+    width: 200px;
+  }
+
+  .exp-card-1,
+  .exp-card-2,
+  .exp-card-3 {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0.75rem;
+    min-height: 120px;
+  }
+
+  .exp-card-1 button,
+  .exp-card-2 button,
+  .exp-card-3 button {
+    width: 45px;
+    height: 45px;
+    font-size: 16px;
+    margin-bottom: 14px;
+  }
+
+  .exp-lite-big-p {
+    font-size: 15px;
+  }
+
+  .exp-lite-small-p {
+    font-size: 12px;
+  }
+
+  .exp-fade-p {
+    font-size: 11px;
+  }
+}
