@@ -59,7 +59,7 @@ function Project() {
                         <div className='grid-4'>
                             <img className='image-box' src='tv home.png' alt='image-box' />
                             <div className='grid-bottom-4'>
-                            <p>BBNL Launcher</p>
+                            <p>BBNL TV Launcher</p>
                             <button className='color2'>UI Design</button>
                             </div>
                         </div>
