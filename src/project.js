@@ -29,10 +29,11 @@ function Project() {
                             <button>Frontend</button>
                         </div>
                     </a>
-                    <a href="https://instagram-clone-1-nao0.onrender.com/" style={{textDecoration:"none"}} target="_blank" rel="noopener noreferrer" className="grid-2" >
-                        <img className='image-box' src='insta-clone.png' alt='image-box'></img>
-                        <div className='grid-bottom-2'>
-                            <p>Instgram Clone (MERN)</p>
+                    
+                    <a href="https://zostel-hotel-booking.onrender.com/" style={{textDecoration:"none"}} target="_blank" rel="noopener noreferrer" className="grid-2" >
+                        <img className='image-box' src='hotel-booking.png' alt='image-box'></img>
+                        <div className='grid-bottom-3'>
+                            <p>Hotel Booking (MERN)</p>
                             <button>Full‑Stack App</button>
                         </div>
                     </a>
@@ -49,6 +50,13 @@ function Project() {
                     {/* Extra grids only show when showMore = true */}
                     {showMore && (
                         <>
+                        <a href="https://instagram-clone-1-nao0.onrender.com/" style={{textDecoration:"none"}} target="_blank" rel="noopener noreferrer" className="grid-2" >
+                            <img className='image-box' src='insta-clone.png' alt='image-box'></img>
+                            <div className='grid-bottom-2'>
+                                <p>Instgram Clone (MERN)</p>
+                                <button>Full‑Stack App</button>
+                            </div>
+                        </a>
                         <a href="https://finalpcbyjami.netlify.app/" style={{ textDecoration: "none" }} target="_blank" rel="noopener noreferrer" className="grid-4" >
                             <img className='image-box' src='port.png' alt='image-box'></img>
                             <div className='grid-bottom-4'>
