@@ -15,6 +15,13 @@ function Project() {
             </div>
             <div className='project-right-box'>
                 <div className='projects-grids' data-aos="fade-up">
+                    <a href="https://learnloop-ybgi.onrender.com/" style={{ textDecoration: "none" }} target="_blank" rel="noopener noreferrer" className='grid-4'>
+                            <img className='image-box' src='learnLoop.png' alt='image-box' />
+                            <div className='grid-bottom-4'>
+                            <p>Learn Loop (MERN)</p>
+                            <button className='color2'>Full-Stack App</button>
+                            </div>
+                    </a>
                     <a href="https://squad-cube.netlify.app/" style={{ textDecoration: "none" }} target="_blank" rel="noopener noreferrer" className="grid-1" >
                         <img className='image-box' src='e-com.png' alt='image-box'></img>
                         <div className='grid-bottom-1'>
@@ -22,13 +29,7 @@ function Project() {
                             <button className='color1'>Full-Stack App</button>
                         </div>
                     </a>
-                    <a href="https://squad-cube.netlify.app/" style={{textDecoration:"none"}} target="_blank" rel="noopener noreferrer" className="grid-1" >
-                        <img className='image-box' src='squad-cube.png' alt='image-box'></img>
-                        <div className='grid-bottom-1'>
-                            <p>Squadcube Landing Page</p>
-                            <button>Frontend</button>
-                        </div>
-                    </a>
+                    
                     
                     <a href="https://zostel-hotel-booking.onrender.com/" style={{textDecoration:"none"}} target="_blank" rel="noopener noreferrer" className="grid-2" >
                         <img className='image-box' src='hotel-booking.png' alt='image-box'></img>
@@ -50,6 +51,13 @@ function Project() {
                     {/* Extra grids only show when showMore = true */}
                     {showMore && (
                         <>
+                        <a href="https://squad-cube.netlify.app/" style={{textDecoration:"none"}} target="_blank" rel="noopener noreferrer" className="grid-1" >
+                        <img className='image-box' src='squad-cube.png' alt='image-box'></img>
+                        <div className='grid-bottom-1'>
+                            <p>Squadcube Landing Page</p>
+                            <button>Frontend</button>
+                        </div>
+                        </a>
                         <a href="https://instagram-clone-1-nao0.onrender.com/" style={{textDecoration:"none"}} target="_blank" rel="noopener noreferrer" className="grid-2" >
                             <img className='image-box' src='insta-clone.png' alt='image-box'></img>
                             <div className='grid-bottom-2'>
