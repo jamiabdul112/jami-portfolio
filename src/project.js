@@ -15,6 +15,13 @@ function Project() {
             </div>
             <div className='project-right-box'>
                 <div className='projects-grids' data-aos="fade-up">
+                    <a href="https://flood-detection-ai-frontend.vercel.app/" style={{ textDecoration: "none" }} target="_blank" rel="noopener noreferrer" className='grid-3'>
+                            <img className='image-box' src='flood-ai.png' alt='image-box' />
+                            <div className='grid-bottom-3'>
+                            <p>Flood Detect AI</p>
+                            <button>AI Decision Support</button>
+                            </div>
+                    </a>
                     <a href="https://learnloop-ybgi.onrender.com/" style={{ textDecoration: "none" }} target="_blank" rel="noopener noreferrer" className='grid-4'>
                             <img className='image-box' src='learnLoop.png' alt='image-box' />
                             <div className='grid-bottom-4'>
