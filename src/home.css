@@ -88,6 +88,26 @@
   font-weight: 700;
 }
 
+.home-bottom-right-button{
+    display: flex;
+    gap: 1rem;
+}
+
+.home-bottom-right-button .home-btn-cv{
+  background-color: #ff007f;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+}
+
+.home-bottom-right-button .home-btn-cv:hover{
+  background-color: #ff4da6;
+}
+
+
 /* Responsive tweaks */
 @media (max-width: 768px) {
   .home-bottom {

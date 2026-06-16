@@ -5,9 +5,13 @@ import Footer from "./footer";
 import Header from "./header";
 import Home from "./home";
 import Project from './project'
+import About from './about'
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import TechStack from "./techStack";
+import Blog from "./blog";
+import Current from "./current";
 
 
 
@@ -29,10 +33,14 @@ function App() {
       
       <Header />
       <Home />
+      <About />
       <Card />
+      <TechStack />
       <Project />
       <Exp />
+      <Blog />
       <Contact />
+      <Current />
       <Footer />
   
     </div>

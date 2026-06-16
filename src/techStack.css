@@ -1,0 +1,152 @@
+/* ── Outer container: clips the scrolling track ── */
+.techstack-page{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 60px;
+    
+}
+
+.techstack-head{
+  padding-left: 10%;
+}
+
+.techstack-head img{
+  width: 120px;
+  height: auto;
+}
+
+.techstack-wrapper {
+  width: 100%;
+  overflow: hidden;
+  padding: 20px 0;
+
+  /* optional fade edges */
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%);
+          mask-image: linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%);
+}
+
+/* ── The moving row ── */
+.techstack-track {
+  display: flex;
+  gap: 16px;
+  width: max-content;
+  animation: marquee 30s linear infinite;
+}
+
+.techstack-track:hover {
+  animation-play-state: paused;
+}
+
+@keyframes marquee {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); } /* -50% because list is doubled */
+}
+
+/* ── Individual pill ── */
+.techstack-pill {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 20px;
+  border: 1.5px solid #e0e0e0;
+  border-radius: 10px;
+  background: #fff;
+  white-space: nowrap;
+  cursor: default;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  transition: all 0.5s ease;
+}
+
+.techstack-pill:hover {
+  border-color: #ff4ecd;
+  cursor: pointer;
+  transform: translateY(-3px) scale(1.02);
+}
+
+/* ── Icon ── */
+.techstack-icon {
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
+}
+
+/* ── Label ── */
+.techstack-name {
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #1a1a1a;
+}
+
+/* ── Responsive rules for Tablets and Smaller Screens ── */
+@media (max-width: 1024px) {
+  
+    .techstack-page {
+    margin-top: 40px; /* Reduced vertical spacing */
+  }
+
+  .techstack-head {
+    padding-left: 5%; /* Bring header layout closer to the edge for better alignment */
+  }
+
+  .techstack-head img {
+    width: 110px; /* Marginally scale down heading visuals */
+  }
+
+  .techstack-wrapper {
+    padding: 15px 0;
+    /* Deepen the edge mask fades so icons don't hit the screen boundaries abruptly */
+    -webkit-mask-image: linear-gradient(to right, transparent 0%, black 15%, black 85%, transparent 100%);
+            mask-image: linear-gradient(to right, transparent 0%, black 15%, black 85%, transparent 100%);
+  }
+
+  .techstack-track {
+    gap: 12px; /* Slightly tighter spacing between moving items */
+    animation-duration: 25s; /* Speed up slightly on smaller viewports so the crawl feels consistent */
+  }
+
+  .techstack-pill {
+    padding: 8px 16px; /* Optimized padding for tactile taps */
+    gap: 8px;
+  }
+
+  .techstack-icon {
+    width: 18px; /* Scale icon sizes for structural hierarchy */
+    height: 18px;
+  }
+
+  .techstack-name {
+    font-size: 11px; /* Crisp typography readable on high-density mobile screens */
+  }
+}
+
+/* ── Specific Overrides for Smaller Android & Mobile Devices ── */
+@media (max-width: 480px) {
+  .techstack-page {
+    margin-top: 25px;
+    margin-bottom: 45px;
+    align-items: center; /* Reduced vertical spacing */
+  }
+
+  .techstack-head {
+    padding-left: 0%;
+    padding-right: 5%; /* Bring header layout closer to the edge for better alignment */
+  }
+
+  .techstack-head img {
+    width: 100px;
+  }
+
+  .techstack-wrapper {
+    /* Hard progressive edge fade optimized for very narrow screens */
+    -webkit-mask-image: linear-gradient(to right, transparent 0%, black 20%, black 80%, transparent 100%);
+            mask-image: linear-gradient(to right, transparent 0%, black 20%, black 80%, transparent 100%);
+  }
+  
+  /* Disable hover state pause on mobile touchscreens to prevent jerky animation glitches */
+  .techstack-track:hover {
+    animation-play-state: running;
+  }
+}

@@ -12,7 +12,10 @@ function Home() {
             <h1 data-aos="fade-up" className='home-h1'><span className='spl-text-with-pink'>Creative</span> Full‑Stack<br></br>Developer &<br></br>Designer</h1>
             <div className='home-bottom-right'>
                 <p data-aos="fade-up" className='home-p'>I design expressive UIs, build full‑stack MERN apps, and craft bold digital experiences.</p>
+                <div className='home-bottom-right-button'>
                 <a data-aos="fade-up" className= "home-btn" href='#hire'>Hire Me</a>
+                <a data-aos="fade-up" className= "home-btn-cv" href="/jami-resume.pdf" download="Jami_Resume.pdf">Download CV</a>
+                </div>
             </div>
         </div>
     </div>

@@ -1,0 +1,112 @@
+/* ── Outer container: clips the scrolling track ── */
+.current-page {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.current-wrapper {
+  width: 100%;
+  overflow: hidden;
+  padding: 20px 0;
+
+  /* Smooth gradient mask transparent edge blending filters */
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%);
+          mask-image: linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%);
+    
+  transform: skew(0deg, -1.5deg);
+}
+
+/* ── The moving row track ── */
+.current-track {
+  display: flex;
+  gap: 16px;
+  width: max-content;
+  animation: marqueeCurrent 30s linear infinite;
+  background-color: #ff007f;
+  
+}
+
+
+
+@keyframes marqueeCurrent {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); } /* Loops perfectly since track array is doubled */
+}
+
+/* ── Individual text capsule item pill ── */
+.current-pill {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 20px;
+ 
+  border-radius: 10px;
+ 
+  white-space: nowrap;
+  cursor: default;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.current-pill:hover {
+  border-color: #ff4ecd;
+  cursor: pointer;
+}
+
+/* ── Typography Label ── */
+.current-name {
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+/* ── Responsive rules for Tablets and iPad Screen Scales ── */
+@media (max-width: 1024px) {
+  .current-page {
+    margin-top: 0px;
+  margin-bottom: 30px;
+  }
+
+  .current-wrapper {
+    padding: 15px 0;
+    -webkit-mask-image: linear-gradient(to right, transparent 0%, black 15%, black 85%, transparent 100%);
+            mask-image: linear-gradient(to right, transparent 0%, black 15%, black 85%, transparent 100%);
+  }
+
+  .current-track {
+    gap: 12px;
+    animation-duration: 25s; /* Accelerate timeline slightly on tablets for consistent panning velocities */
+  }
+
+  .current-pill {
+    padding: 8px 16px;
+    gap: 8px;
+  }
+
+  .current-name {
+    font-size: 11px;
+  }
+}
+
+/* ── Specific Overrides for Smaller Android & Mobile Handsets ── */
+@media (max-width: 480px) {
+  .current-page {
+  margin-top: 0px;
+  margin-bottom: 30px;
+    align-items: center;
+  }
+
+  .current-wrapper {
+    -webkit-mask-image: linear-gradient(to right, transparent 0%, black 20%, black 80%, transparent 100%);
+            mask-image: linear-gradient(to right, transparent 0%, black 20%, black 80%, transparent 100%);
+  }
+  
+  /* Disables touch hover freezing on mobile viewports to avoid rigid scroll pauses */
+  .current-track:hover {
+    animation-play-state: running;
+  }
+}

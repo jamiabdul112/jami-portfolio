@@ -56,8 +56,9 @@
   gap: 12px;
   user-select: none;
   margin-bottom: 1rem;
-  height: 320px;
+  height: auto;
   transition: all 0.3s ease;
+
  
 }
 
@@ -171,6 +172,27 @@
   color: white !important;
 }
 
+.project-btn-demo{
+  transition: all 0.3s ease;
+}
+
+.project-btn-demo:hover{
+  transform: translateY(-3px) scale(1.02);
+   box-shadow: 0 12px 20px rgba(0,0,0,0.15);
+}
+
+.project-btn-github{
+  transition: all 0.3s ease;
+
+}
+
+.project-btn-github:hover{
+  background-color: black !important;
+  color: white !important;
+  transform: translateY(-3px) scale(1.02);
+   box-shadow: 0 12px 20px rgba(0,0,0,0.15);
+}
+
 /* Highlight text styles for "Finance Landing page" */
 
 /* Tablet breakpoint (≤768px) */
@@ -202,8 +224,8 @@
   }
 
   .grid-1, .grid-2, .grid-3, .grid-4 {
-    height: 280px;       /* slightly taller */
-    padding-bottom: 2rem;
+    height: auto;       /* slightly taller */
+   
     width: 600px; /* extra bottom padding */
   }
 
@@ -229,6 +251,8 @@
   }
 }
 
+
+
 /* Mobile / Android breakpoint (≤480px) */
 @media (max-width: 480px) {
   .project-page {
@@ -252,7 +276,7 @@
   }
 
   .grid-1, .grid-2, .grid-3, .grid-4 {
-    height: 200px;  
+    height: auto;  
     width: auto;  
         /* taller for mobile */
      /* generous bottom padding */
